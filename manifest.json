@@ -1,10 +1,23 @@
 {
-  "name": "Hello Extensions",
-  "description": "Base Level Extension",
-  "version": "1.0",
   "manifest_version": 3,
-  "action": {
-    "default_popup": "hello.html",
-    "default_icon": "hello_extensions.png"
+  "name": "PronunciAid",
+  "version": "1.0",
+  "description": "Quickly hear English pronunciation via YouGlish — select text and press Alt+Y or use right-click.",
+  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "open-youglish": {
+      "suggested_key": {
+        "default": "Alt+Y"
+      },
+      "description": "Open YouGlish for selected text"
+    }
+  },
+  "icons": {
+    "16": "hello_extensions.png",
+    "48": "hello_extensions.png",
+    "128": "hello_extensions.png"
   }
 }
