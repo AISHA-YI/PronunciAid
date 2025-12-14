@@ -2,7 +2,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: "youglish-lookup",
-    title: "🔊 Search pronunciation on YouGlish",
+    title: "Search pronunciation on YouGlish",
     contexts: ["selection"] // Show only when text is selected
   });
 });
