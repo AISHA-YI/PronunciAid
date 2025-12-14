@@ -1,12 +1,35 @@
-# Getting Started With Google Chrome Extensions (Hello World)
+# Chrome Web Store
 
-This example demonstrates how to create a simple "Hello World" Chrome Extension.
-For more details, visit the [official tutorial](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world).
+## **Product Title**
+PronunciAid - Quick Pronunciation Helper
 
-## Running This Extension
+## **Summary**
+Instantly learn pronunciation by highlighting any word and right-clicking to see real examples on YouGlish.
 
-1. Clone this repository.
-2. Load this directory in Chrome as an [unpacked extension](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked).
-3. Click the extension icon in the Chrome toolbar, then select the "Hello Extensions" extension. A popup will appear displaying the text "Hello Extensions".
+## **Description**
+**PronunciAid** makes learning pronunciation effortless and instant.
 
-4. TEST
+**How it works:**
+1. Highlight any word or phrase on any webpage
+2. Right-click and select "PronunciAid" 
+3. Instantly view real pronunciation examples on YouGlish
+
+**Key Features:**
+✓ One-click pronunciation lookup - no typing needed
+✓ See native speakers pronouncing words in context
+✓ Learn authentic pronunciation from real videos
+✓ Support for words and phrases
+✓ Clean, lightweight extension
+
+**Perfect for:**
+• Language learners improving pronunciation
+• Students preparing for presentations
+• Professionals polishing communication skills
+• Anyone curious about proper pronunciation
+
+Stop copying and pasting words to search for pronunciation. With PronunciAid, professional pronunciation guidance is just a right-click away.
+
+**Privacy:** This extension does not collect or store any user data.
+
+### **Single Purpose Description**
+This extension helps users quickly learn the pronunciation of words by providing instant access to YouGlish pronunciation examples through a simple right-click action.
