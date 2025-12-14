@@ -3,9 +3,6 @@
 ## Summary
 Instantly learn pronunciation by highlighting any word and right-clicking to see real examples on YouGlish.
 
-## Description
-**PronunciAid** makes learning pronunciation effortless and instant.
-
 ## How it works:
 1. Highlight any word or phrase on any webpage
 2. Right-click and select "PronunciAid" 
