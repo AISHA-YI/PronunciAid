@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "PronunciAid",
   "version": "1.0",
-  "description": "Quickly hear English pronunciation via YouGlish — select text and press Alt+Y or use right-click.",
+  "description": "Quickly hear English pronunciation via YouGlish — highlight text, right-click, and select PronunciAid.",
   "permissions": ["contextMenus", "activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
