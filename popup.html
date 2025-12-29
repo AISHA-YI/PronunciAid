@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            width: 300px;
+            padding: 20px;
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            background: #fff;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #FFB6C1;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .emoji {
+            font-size: 24px;
+        }
+
+        /* Toggle switch styles */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 12px;
+            background: #FFF0F5;
+            border-radius: 8px;
+            border: 1px solid #FFB6C1;
+        }
+
+        .toggle-label {
+            font-size: 13px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 44px;
+            height: 24px;
+        }
+
+        .toggle-switch input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.3s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(20px);
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #FFB6C1;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            background: white;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+
+        select:hover {
+            border-color: #FF69B4;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #FF1493;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: transform 0.1s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(255, 105, 180, 0.3);
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .saving {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="emoji"></span>
+        <h3>PronunciAid</h3>
+    </div>
+
+    <div class="toggle-container">
+        <span class="toggle-label">Open in popup window</span>
+        <label class="toggle-switch">
+            <input type="checkbox" id="openInPopup">
+            <span class="slider"></span>
+        </label>
+    </div>
+    
+    <label for="language">Set default language</label>
+    <select id="language">
+        <option value="arabic">Arabic</option>
+        <option value="chinese">Chinese</option>
+        <option value="dutch">Dutch</option>
+        <option value="english">English</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+        <option value="greek">Greek</option>
+        <option value="hebrew">Hebrew</option>
+        <option value="hindi">Hindi</option>
+        <option value="italian">Italian</option>
+        <option value="japanese">Japanese</option>
+        <option value="korean">Korean</option>
+        <option value="persian">Persian</option>
+        <option value="polish">Polish</option>
+        <option value="portuguese">Portuguese</option>
+        <option value="romanian">Romanian</option>
+        <option value="russian">Russian</option>
+        <option value="spanish">Spanish</option>
+        <option value="swedish">Swedish</option>
+        <option value="thai">Thai</option>
+        <option value="turkish">Turkish</option>
+        <option value="ukrainian">Ukrainian</option>
+        <option value="vietnamese">Vietnamese</option>
+        <option value="signlanguage">Sign Languages</option>
+    </select>
+
+    <button id="save">Save Settings</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>
