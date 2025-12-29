@@ -1,20 +1,18 @@
 {
   "manifest_version": 3,
   "name": "PronunciAid",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Quickly hear English pronunciation via YouGlish — highlight text, right-click, and select PronunciAid.",
-  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
   "background": {
     "service_worker": "background.js"
   },
-  "commands": {
-    "open-youglish": {
-      "suggested_key": {
-        "default": "Alt+Y"
-      },
-      "description": "Open YouGlish for selected text"
-    }
-  },
+  "options_page": "options.html",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",

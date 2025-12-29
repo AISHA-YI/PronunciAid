@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PronunciAid Settings</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 400px;
+        }
+
+        .setting-group {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        select {
+            padding: 5px 10px;
+            margin-left: 10px;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+
+        .status {
+            margin-top: 10px;
+            color: #4CAF50;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>PronunciAid Settings</h2>
+
+    <div class="setting-group">
+        <h3>Language Settings</h3>
+        <label>
+            Default Language:
+            <select id="language">
+                <option value="arabic">Arabic</option>
+                <option value="chinese">Chinese</option>
+                <option value="dutch">Dutch</option>
+                <option value="english">English</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+                <option value="greek">Greek</option>
+                <option value="hebrew">Hebrew</option>
+                <option value="hindi">Hindi</option>
+                <option value="italian">Italian</option>
+                <option value="japanese">Japanese</option>
+                <option value="korean">Korean</option>
+                <option value="persian">Persian</option>
+                <option value="polish">Polish</option>
+                <option value="portuguese">Portuguese</option>
+                <option value="romanian">Romanian</option>
+                <option value="russian">Russian</option>
+                <option value="spanish">Spanish</option>
+                <option value="swedish">Swedish</option>
+                <option value="thai">Thai</option>
+                <option value="turkish">Turkish</option>
+                <option value="ukrainian">Ukrainian</option>
+                <option value="vietnamese">Vietnamese</option>
+                <option value="sign">Sign Languages</option>
+            </select>
+        </label>
+    </div>
+
+    <button id="save">Save Settings</button>
+    <div id="status" class="status">Settings saved!</div>
+
+    <script src="options.js"></script>
+</body>
+
+</html>
